@@ -45,6 +45,7 @@ const ResponsiveAppBar = (props) => {
             variant="h6"
             noWrap
             component="a"
+            color="inherit"
             href="/"
             sx={{
               mr: 2,
@@ -52,7 +53,6 @@ const ResponsiveAppBar = (props) => {
               fontFamily: 'monospace',
               fontWeight: 700,
               letterSpacing: '.3rem',
-              color: 'inherit',
               textDecoration: 'none',
             }}
           >
@@ -89,7 +89,7 @@ const ResponsiveAppBar = (props) => {
               }}
             >
               <MenuItem key="about me" onClick={handleCloseNavMenu}>
-                <Typography textAlign="center">About me</Typography>
+                <Typography textAlign="center" color="inherit">About me</Typography>
               </MenuItem>
             </Menu>
           </Box>
@@ -99,6 +99,7 @@ const ResponsiveAppBar = (props) => {
             noWrap
             component="a"
             href=""
+            color="inherit"
             sx={{
               mr: 2,
               display: { xs: 'flex', md: 'none' },
@@ -106,7 +107,6 @@ const ResponsiveAppBar = (props) => {
               fontFamily: 'monospace',
               fontWeight: 700,
               letterSpacing: '.3rem',
-              color: 'inherit',
               textDecoration: 'none',
             }}
           >
@@ -115,22 +115,23 @@ const ResponsiveAppBar = (props) => {
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
               <Button
                 key="About me"
+                color="secondary"
                 onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: 'white', display: 'block' }}
+                sx={{ my: 2, display: 'block' }}
               >
-                about me
+              <Typography color="inherit">about me</Typography>
               </Button>
           </Box>
 
           <Box sx={{ flexGrow: 0 }}>
-              <Avatar>
-                <NightlightRoundedIcon
-                  onClick={
-                    () => {
-                      toggleDarkMode()
-                    }
+              <Avatar
+                onClick={
+                  () => {
+                    toggleDarkMode()
                   }
-                />
+                }
+              >
+                <NightlightRoundedIcon/>
               </Avatar>
             {/* <Menu
               sx={{ mt: '45px' }}
