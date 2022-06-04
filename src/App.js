@@ -1,24 +1,39 @@
+import { useState } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import ResponsiveAppBar from './Components/ResponsiveAppBar';
+import { ThemeProvider, createTheme } from '@mui/material/styles';
+
+const theme = createTheme({
+  palette: {
+    type: 'light',
+    primary: {
+      main: '#FFFFFF', // red
+    },
+    secondary: {
+      main: '#000000', // green
+    },
+  }
+});
+
+const darkTheme = createTheme({
+  palette: {
+    mode: 'dark',
+  },
+});
 
 function App() {
+
+  const [isDarkMode, setIsDarkMode] = useState(false);
+
+  const toggleDarkMode = (event) => {
+    setIsDarkMode(!isDarkMode);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ThemeProvider theme={isDarkMode ? darkTheme : theme}>
+      <ResponsiveAppBar toggleDarkMode={toggleDarkMode}/>
+    </ThemeProvider>
   );
 }
 
