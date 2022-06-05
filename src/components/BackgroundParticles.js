@@ -40,42 +40,40 @@ const BackgroundParticles = (props) => {
             // },
             resize: true,
           },
-          modes: {
-            push: {
-              quantity: 4,
-            },
-            repulse: {
-              distance: 200,
-              duration: 0.4,
-            },
-          },
+          // modes: {
+          //   push: {
+          //     quantity: 4,
+          //   },
+          //   repulse: {
+          //     distance: 200,
+          //     duration: 0.4,
+          //   },
+          // },
         },
         particles: {
           color: {
-            value: isDarkMode ? theme.palette.primary.main : theme.palette.secondary.main,
+            value: theme.palette.secondary.main,
           },
           opacity: {
-            value: 0.1,
+            value: 1,
           },
           links: {
-            color: isDarkMode ? theme.palette.primary.main : theme.palette.secondary.main,
+            color: theme.palette.secondary.main,
             distance: 150,
             enable: true,
-            opacity: 0.1,
+            opacity: 1,
             width: 1,
           },
-          collisions: {
-            enable: true,
-          },
+          // collisions: {
+          //   enable: true,
+          // },
           move: {
             direction: "none",
             enable: true,
             outModes: {
               default: "bounce",
             },
-            random: false,
             speed: 2,
-            straight: false,
           },
           number: {
             density: {
