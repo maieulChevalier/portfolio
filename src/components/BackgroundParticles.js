@@ -28,40 +28,40 @@ const BackgroundParticles = (props) => {
       loaded={particlesLoaded}
       options={{
         fpsLimit: 60,
-        interactivity: {
-          events: {
-            // onClick: {
-            //   enable: true,
-            //   mode: "push",
-            // },
-            // onHover: {
-            //   enable: true,
-            //   mode: "repulse",
-            // },
-            resize: true,
-          },
-          // modes: {
-          //   push: {
-          //     quantity: 4,
-          //   },
-          //   repulse: {
-          //     distance: 200,
-          //     duration: 0.4,
-          //   },
-          // },
-        },
+        // interactivity: {
+        //   events: {
+        //     onClick: {
+        //       enable: true,
+        //       mode: "push",
+        //     },
+        //     onHover: {
+        //       enable: true,
+        //       mode: "repulse",
+        //     },
+        //     resize: true,
+        //   },
+        //   modes: {
+        //     push: {
+        //       quantity: 4,
+        //     },
+        //     repulse: {
+        //       distance: 200,
+        //       duration: 0.4,
+        //     },
+        //   },
+        // },
         particles: {
           color: {
             value: theme.palette.secondary.main,
           },
           opacity: {
-            value: 1,
+            value: 0.25,
           },
           links: {
             color: theme.palette.secondary.main,
             distance: 150,
             enable: true,
-            opacity: 1,
+            opacity: 0.25,
             width: 1,
           },
           // collisions: {
@@ -87,6 +87,10 @@ const BackgroundParticles = (props) => {
           },
           size: {
             value: { min: 1, max: 5 },
+            animation: {
+              enable : true,
+              speed: 10
+            },
           },
         },
         detectRetina: true,

@@ -19,8 +19,8 @@ const Header = () => {
         'FAST LEARNER',
         'ALTRUISTE'
       ],
-      typeSpeed: 50,
-      backSpeed: 50,
+      typeSpeed: 70,
+      backSpeed: 70,
       smartBackspace: true,
       loop: true,
       showCursor: true,
@@ -46,7 +46,7 @@ const Header = () => {
         strings: [
           'Maïeul Chevalier',
         ],
-        typeSpeed: 40,
+        typeSpeed: 60,
         smartBackspace: true,
         showCursor: true,
       };

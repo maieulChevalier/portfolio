@@ -39,10 +39,9 @@ const ResponsiveAppBar = (props) => {
   return (
     <AppBar 
       position="fixed"
-      sx={{
-        zIndex: 999,
-        backgroundColor:"primary"
-      }}  
+      enableColorOnDark
+      color="primary"
+      style={{ background: 'transparent', boxShadow: 'none'}} 
     >
       <Container maxWidth="xl">
         <Toolbar>
