@@ -1,4 +1,7 @@
 import { useState } from 'react';
+
+import ProfilePictureCartoon from "../images/ProfilePictureCartoon.png";
+
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
@@ -12,10 +15,11 @@ import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
-import NightlightRoundedIcon from '@mui/icons-material/NightlightRounded';
+import DarkModeIcon from '@mui/icons-material/DarkMode';
+import Brightness7Icon from '@mui/icons-material/Brightness7';
 
 const ResponsiveAppBar = (props) => {
-  const { toggleDarkMode } = props;
+  const { toggleDarkMode, isDarkMode } = props;
 
 
   const [anchorElNav, setAnchorElNav] = useState(null);
@@ -45,25 +49,19 @@ const ResponsiveAppBar = (props) => {
     >
       <Container maxWidth="xl">
         <Toolbar>
-          <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
-          <Typography
-            variant="h6"
-            noWrap
-            component="a"
-            color="inherit"
-            href="/"
+            <Avatar 
             sx={{
-              mr: 2,
-              display: { xs: 'none', md: 'flex' },
-              fontFamily: 'monospace',
-              fontWeight: 700,
-              letterSpacing: '.3rem',
-              textDecoration: 'none',
-            }}
-          >
-            LOGO
-          </Typography>
-
+              xs: 'none',
+              md: 'flex',
+              width: 30,
+              height: 30,
+              margin: 1,
+              color: 'secondary' 
+            }} 
+            src={ProfilePictureCartoon}
+            alt="Maïeul Chevalier" 
+          />
+          {/* <ProfilePictureCartoon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} /> */}
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
             <IconButton
               size="large"
@@ -93,30 +91,14 @@ const ResponsiveAppBar = (props) => {
                 display: { xs: 'block', md: 'none' },
               }}
             >
-              <MenuItem key="about me" onClick={handleCloseNavMenu}>
-                <Typography textAlign="center" color="inherit">About me</Typography>
+              <MenuItem key="About me" onClick={handleCloseNavMenu}>
+                <Typography textAlign="center"  variant="h6" color="inherit" sx={{fontWeight:700, mr:1}}>Tech stack</Typography>
+              </MenuItem>
+              <MenuItem key="Portfolio" onClick={handleCloseNavMenu}>
+                <Typography textAlign="center"  variant="h6" color="inherit" sx={{fontWeight:700, mr:1}}>Portfolio</Typography>
               </MenuItem>
             </Menu>
           </Box>
-          <AdbIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} />
-          <Typography
-            variant="h5"
-            noWrap
-            component="a"
-            href=""
-            color="inherit"
-            sx={{
-              mr: 2,
-              display: { xs: 'flex', md: 'none' },
-              flexGrow: 1,
-              fontFamily: 'monospace',
-              fontWeight: 700,
-              letterSpacing: '.3rem',
-              textDecoration: 'none',
-            }}
-          >
-            LOGO
-          </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
               <Button
                 key="About me"
@@ -124,40 +106,34 @@ const ResponsiveAppBar = (props) => {
                 onClick={handleCloseNavMenu}
                 sx={{ my: 2, display: 'block' }}
               >
-              <Typography color="inherit">about me</Typography>
+                <Typography variant="h6" color="inherit" sx={{fontWeight:700, mr:1}}>Compétences</Typography>
+              </Button>
+              <Button
+                key="About me"
+                color="secondary"
+                onClick={handleCloseNavMenu}
+                sx={{ my: 2, display: 'block' }}
+              >
+                <Typography  variant="h6" color="inherit" sx={{fontWeight:700, mr:1}}>Portfolio</Typography>
               </Button>
           </Box>
 
           <Box sx={{ flexGrow: 0 }}>
-              <Avatar
-                onClick={
-                  () => {
-                    toggleDarkMode()
-                  }
+            <Avatar
+              sx={{
+                width:30,
+                height:30,
+                bgcolor:'primary'
+              }}
+              onClick={
+                () => {
+                  toggleDarkMode()
                 }
-              >
-                <NightlightRoundedIcon/>
-              </Avatar>
-            {/* <Menu
-              sx={{ mt: '45px' }}
-              id="menu-appbar"
-              anchorEl={anchorElUser}
-              anchorOrigin={{
-                vertical: 'top',
-                horizontal: 'right',
-              }}
-              keepMounted
-              transformOrigin={{
-                vertical: 'top',
-                horizontal: 'right',
-              }}
-              open={Boolean(anchorElUser)}
-              onClose={handleCloseUserMenu}
+              }
             >
-              <MenuItem key="dark mode" onClick={handleCloseUserMenu}>
-                <Typography textAlign="center">dark mode</Typography>
-              </MenuItem>
-            </Menu> */}
+              {isDarkMode ? <Brightness7Icon color='secondary' />: <DarkModeIcon color='secondary' />}
+              
+            </Avatar>
           </Box>
         </Toolbar>
       </Container>

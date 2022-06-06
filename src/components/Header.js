@@ -19,8 +19,8 @@ const Header = () => {
         'FAST LEARNER',
         'ALTRUISTE'
       ],
-      typeSpeed: 70,
-      backSpeed: 70,
+      typeSpeed: 80,
+      backSpeed: 80,
       smartBackspace: true,
       loop: true,
       showCursor: true,
@@ -46,7 +46,7 @@ const Header = () => {
         strings: [
           'Maïeul Chevalier',
         ],
-        typeSpeed: 60,
+        typeSpeed: 70,
         smartBackspace: true,
         showCursor: true,
       };
@@ -78,6 +78,8 @@ const Header = () => {
           width: 80,
           height: 80,
           margin: 1,
+          backgroundColor: 'secondary' 
+
         }} 
         src={ProfilePictureCartoon}
         alt="Maïeul Chevalier" 

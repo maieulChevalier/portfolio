@@ -46,7 +46,7 @@ function App() {
       <BrowserRouter>
         <CssBaseline />
         <ThemeProvider theme={isDarkMode ? darkTheme : theme}>
-          <ResponsiveAppBar toggleDarkMode={toggleDarkMode}/>
+          <ResponsiveAppBar toggleDarkMode={toggleDarkMode} isDarkMode={isDarkMode} />
           <Routes>
             <Route path="/" element={<Home isDarkMode={isDarkMode} />} />
             {/* <Route path="about" element={<About />} /> */}
