@@ -2,7 +2,6 @@ import { useEffect, useRef } from "react";
 import Typed from "typed.js";
 import { Typography, Avatar, Grid, Box } from "@mui/material";
 import ProfilePictureCartoon from "../images/ProfilePictureCartoon.png";
-import { textAlign } from "@mui/system";
 
 
 const Header = () => {

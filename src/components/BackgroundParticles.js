@@ -1,13 +1,9 @@
-
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
-import { useTheme } from '@mui/material';
-
+import { useTheme } from "@mui/material";
 
 const BackgroundParticles = (props) => {
-  const {isDarkMode} = props;
-
-  const theme = useTheme()
+  const theme = useTheme();
 
   const particlesInit = async (main) => {
     console.log(main);
@@ -52,13 +48,13 @@ const BackgroundParticles = (props) => {
         // },
         particles: {
           color: {
-            value: theme.palette.secondary.main,
+            value: theme.palette.text.primary,
           },
           opacity: {
             value: 0.25,
           },
           links: {
-            color: theme.palette.secondary.main,
+            color: theme.palette.text.primary,
             distance: 150,
             enable: true,
             opacity: 0.25,
@@ -88,8 +84,8 @@ const BackgroundParticles = (props) => {
           size: {
             value: { min: 1, max: 5 },
             animation: {
-              enable : true,
-              speed: 10
+              enable: true,
+              speed: 10,
             },
           },
         },
@@ -99,4 +95,4 @@ const BackgroundParticles = (props) => {
   );
 };
 
-export default BackgroundParticles
+export default BackgroundParticles;

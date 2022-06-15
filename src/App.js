@@ -1,58 +1,63 @@
-import { useState } from 'react';
-import logo from './logo.svg';
-import Home from './components/Home';
-import './App.css';
+import { useState, useMemo, createContext } from "react";
+import Home from "./components/Home";
+import Skills from "./components/Skills";
+import Portfolio from "./components/Portfolio";
+
 import { BrowserRouter } from "react-router-dom";
 import { Routes, Route, Link } from "react-router-dom";
-import ResponsiveAppBar from './components/ResponsiveAppBar';
-import { ThemeProvider, createTheme } from '@mui/material/styles';
-import CssBaseline from '@mui/material/CssBaseline';
+import ResponsiveAppBar from "./components/ResponsiveAppBar";
+import { ThemeProvider, createTheme } from "@mui/material/styles";
+import CssBaseline from "@mui/material/CssBaseline";
 
+import { isDarkModeVar } from "./cache";
+import { useReactiveVar } from "@apollo/client";
+import About from "./components/About";
 
-const theme = createTheme({
-  palette: {
-    type: 'light',
-    primary: {
-      main: '#FFFFFF', 
-      dark: '#fcffff'
-    },
-    secondary: {
-      main: '#000000',
-    },
-  }
-});
-
-const darkTheme = createTheme({
-  palette: {
-    mode: 'dark',
-    primary: {
-      main: '#171923', // red
-    },
-    secondary: {
-      main: '#FFFFFF', // green
-    },
-  },
-});
+export const ColorModeContext = createContext({ toggleColorMode: () => {} });
 
 function App() {
+  const [mode, setMode] = useState("light");
+  const colorMode = useMemo(
+    () => ({
+      toggleColorMode: () => {
+        setMode((prevMode) => (prevMode === "light" ? "dark" : "light"));
+      },
+    }),
+    []
+  );
 
-  const [isDarkMode, setIsDarkMode] = useState(false);
-
-  const toggleDarkMode = (event) => {
-    setIsDarkMode(!isDarkMode);
-  };
-
+  const theme = useMemo(
+    () =>
+      createTheme({
+        breakpoints: {
+          values: {
+            xs: 0,
+            sm: 600,
+            md: 900,
+            lg: 1200,
+            xl: 1536,
+          },
+        },
+        palette: {
+          mode,
+        },
+      }),
+    [mode]
+  );
   return (
-      <BrowserRouter>
-        <CssBaseline />
-        <ThemeProvider theme={isDarkMode ? darkTheme : theme}>
-          <ResponsiveAppBar toggleDarkMode={toggleDarkMode} isDarkMode={isDarkMode} />
+    <BrowserRouter>
+      <CssBaseline />
+      <ColorModeContext.Provider value={colorMode}>
+        <ThemeProvider theme={theme}>
           <Routes>
-            <Route path="/" element={<Home isDarkMode={isDarkMode} />} />
-            {/* <Route path="about" element={<About />} /> */}
+            <Route path="/" element={<Home />} />
+            <Route path="/skills" element={<Skills />} />
+            <Route path="/skills" element={<About />} />
+            {/* an about section to talk about my interests, hobbies, daily routine, etc. */}
           </Routes>
         </ThemeProvider>
-      </BrowserRouter>
+      </ColorModeContext.Provider>
+    </BrowserRouter>
   );
 }
 

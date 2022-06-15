@@ -1,14 +1,10 @@
 import { useEffect, useRef } from "react";
-
+import Header from "./Header";
 import BackgroundParticles from "./BackgroundParticles";
 
 import Typed from "typed.js";
-
-import { Typography, Avatar, Box } from "@mui/material";
-
+import { Typography, Avatar, Grid, Box } from "@mui/material";
 import ProfilePictureCartoon from "../images/ProfilePictureCartoon.png";
-
-import ResponsiveAppBar from "./ResponsiveAppBar";
 
 const Home = () => {
   // Create reference to store the DOM element containing the animation
@@ -61,7 +57,6 @@ const Home = () => {
 
   return (
     <>
-      <ResponsiveAppBar />
       <Box
         sx={{
           zIndex: 1,
@@ -70,8 +65,7 @@ const Home = () => {
           flexDirection: "column",
           alignItems: "center",
           justifyContent: "center",
-          bgcolor: "background.default",
-          color: "text.primary",
+          backgroundColor: "primary.dark",
         }}
       >
         <Avatar
@@ -79,6 +73,7 @@ const Home = () => {
             width: 80,
             height: 80,
             margin: 1,
+            backgroundColor: "secondary",
           }}
           src={ProfilePictureCartoon}
           alt="Maïeul Chevalier"
@@ -90,13 +85,13 @@ const Home = () => {
             <span style={{ whiteSpace: 'pre' }} ref={el} />
           </div>
         </Typography> */}
-        <Typography sx={{ fontSize: 26, fontWeight: 900 }}>
+        <Typography color="secondary" sx={{ fontSize: 26, fontWeight: 900 }}>
           <span
             style={{ whiteSpace: "pre", textAlign: "center" }}
             ref={nameEl}
           />
         </Typography>
-        <Typography sx={{ fontSize: 22, fontWeight: 700 }}>
+        <Typography color="secondary" sx={{ fontSize: 22, fontWeight: 700 }}>
           <span style={{ whiteSpace: "pre", textAlign: "center" }} ref={el} />
         </Typography>
       </Box>
