@@ -100,7 +100,7 @@ const Home = () => {
           <span style={{ whiteSpace: "pre", textAlign: "center" }} ref={el} />
         </Typography>
       </Box>
-      <BackgroundParticles />
+      {/* <BackgroundParticles /> */}
     </>
   );
 };

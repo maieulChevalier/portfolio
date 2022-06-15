@@ -24,7 +24,7 @@ import graphql from "../images/graphql.png";
 import nodejs from "../images/nodejs.png";
 import rest from "../images/rest.png";
 import neo4j from "../images/neo4j.png";
-import mongodb from "../images/mongodb.png";
+import mongoDB from "../images/mongoDB.png";
 import redis from "../images/redis.png";
 import postgresql from "../images/postgresql.png";
 import firebase from "../images/firebase.png";
@@ -38,6 +38,11 @@ import cloudflare from "../images/cloudflare.png";
 import speedLimit from "../images/speedLimit.png";
 import kubernetes from "../images/kubernetes.png";
 import DDOS from "../images/DDOS.png";
+import vscode from "../images/vscode.png";
+import agileMethod from "../images/agileMethod.png";
+import buildMeasureLearn from "../images/buildMeasureLearn.png";
+import gantt from "../images/gantt.png";
+import kanban from "../images/kanban.png";
 
 function Copyright() {
   return (
@@ -106,8 +111,8 @@ export default function Album() {
                   title={"Javascript"}
                   picture={javascript}
                   gradient={{
-                    topLeftColor: "#FFFCB8",
-                    bottomRightColor: "#FFFFD2",
+                    topLeftColor: "#FDFFB3",
+                    bottomRightColor: "#F7F9CB",
                   }}
                   level={3.5}
                 />
@@ -116,8 +121,8 @@ export default function Album() {
                   title={"Python"}
                   picture={python}
                   gradient={{
-                    topLeftColor: "#FFFCB8",
-                    bottomRightColor: "#FFFFD2",
+                    topLeftColor: "#FDFF7E",
+                    bottomRightColor: "#9CC9FF",
                   }}
                   level={2.5}
                 />
@@ -126,8 +131,8 @@ export default function Album() {
                   title={"PHP"}
                   picture={php}
                   gradient={{
-                    topLeftColor: "#FFFCB8",
-                    bottomRightColor: "#FFFFD2",
+                    topLeftColor: "#DFE8FE",
+                    bottomRightColor: "#C8D5F7",
                   }}
                   level={2.5}
                 />
@@ -136,7 +141,7 @@ export default function Album() {
                   title={"Html5"}
                   picture={HTML5}
                   gradient={{
-                    topLeftColor: "#FFE7C9",
+                    topLeftColor: "#FFEBDE",
                     bottomRightColor: "#FFD3C9",
                   }}
                   level={4}
@@ -156,68 +161,68 @@ export default function Album() {
                   title={"React"}
                   picture={react}
                   gradient={{
-                    topLeftColor: "#2EA3A3",
-                    bottomRightColor: "#1D6262",
+                    topLeftColor: "#EDFFFF",
+                    bottomRightColor: "#C3EFEF",
                   }}
-                  level={4}
+                  level={4.5}
                 />
                 <SkillCard
                   key={5}
                   title={"Vue.js"}
                   picture={vue}
                   gradient={{
-                    topLeftColor: "#2EA3A3",
-                    bottomRightColor: "#1D6262",
+                    topLeftColor: "#D8FFE9",
+                    bottomRightColor: "#BFF3D6",
                   }}
-                  level={3.5}
+                  level={3}
                 />
                 <SkillCard
                   key={6}
-                  title={"UI/UX"}
+                  title={"Material design"}
                   picture={UIUX}
                   gradient={{
-                    topLeftColor: "#2EA3A3",
-                    bottomRightColor: "#1D6262",
+                    topLeftColor: "#F3BFBF",
+                    bottomRightColor: "#FFFF90",
                   }}
-                  level={3.5}
+                  level={4}
                 />
                 <SkillCard
                   key={7}
                   title={"Git"}
                   picture={git}
                   gradient={{
-                    topLeftColor: "#2EA3A3",
-                    bottomRightColor: "#1D6262",
+                    topLeftColor: "#1D6262",
+                    bottomRightColor: "#0B1B44",
                   }}
-                  level={3.5}
+                  level={4}
                 />
                 <SkillCard
                   key={8}
                   title={"GraphQL"}
                   picture={graphql}
                   gradient={{
-                    topLeftColor: "#2EA3A3",
-                    bottomRightColor: "#1D6262",
+                    topLeftColor: "#FFFFFF",
+                    bottomRightColor: "#F9C6F9",
                   }}
-                  level={3.5}
+                  level={4.5}
                 />
                 <SkillCard
                   key={9}
                   title={"nodeJS"}
                   picture={nodejs}
                   gradient={{
-                    topLeftColor: "#2EA3A3",
-                    bottomRightColor: "#1D6262",
+                    topLeftColor: "#DEFFDB",
+                    bottomRightColor: "#BFF3C0",
                   }}
-                  level={3.5}
+                  level={4}
                 />
                 <SkillCard
                   key={10}
                   title={"REST"}
                   picture={rest}
                   gradient={{
-                    topLeftColor: "#2EA3A3",
-                    bottomRightColor: "#1D6262",
+                    topLeftColor: "#CBEFFF",
+                    bottomRightColor: "#BDD6F7",
                   }}
                   level={3.5}
                 />
@@ -226,18 +231,18 @@ export default function Album() {
                   title={"neo4j"}
                   picture={neo4j}
                   gradient={{
-                    topLeftColor: "#2EA3A3",
-                    bottomRightColor: "#1D6262",
+                    topLeftColor: "#FFFFFF",
+                    bottomRightColor: "#E3E3E3",
                   }}
-                  level={3.5}
+                  level={4.5}
                 />
                 <SkillCard
                   key={10}
                   title={"mongoDB"}
-                  picture={mongodb}
+                  picture={mongoDB}
                   gradient={{
-                    topLeftColor: "#2EA3A3",
-                    bottomRightColor: "#1D6262",
+                    topLeftColor: "#DCCCC0",
+                    bottomRightColor: "#D3AF7D",
                   }}
                   level={3.5}
                 />
@@ -246,38 +251,38 @@ export default function Album() {
                   title={"redis"}
                   picture={redis}
                   gradient={{
-                    topLeftColor: "#2EA3A3",
-                    bottomRightColor: "#1D6262",
+                    topLeftColor: "#FFC9C9",
+                    bottomRightColor: "#F4B6B6",
                   }}
-                  level={3.5}
+                  level={4}
                 />
                 <SkillCard
                   key={10}
                   title={"postgreSQL"}
                   picture={postgresql}
                   gradient={{
-                    topLeftColor: "#2EA3A3",
-                    bottomRightColor: "#1D6262",
+                    topLeftColor: "#DFE8FE",
+                    bottomRightColor: "#C8D5F7",
                   }}
-                  level={3.5}
+                  level={3}
                 />
                 <SkillCard
                   key={10}
                   title={"Firebase"}
                   picture={firebase}
                   gradient={{
-                    topLeftColor: "#2EA3A3",
-                    bottomRightColor: "#1D6262",
+                    topLeftColor: "#FFFECE",
+                    bottomRightColor: "#F6D7AA",
                   }}
-                  level={3.5}
+                  level={4}
                 />
                 <SkillCard
                   key={10}
                   title={"CI/CD"}
                   picture={CICD}
                   gradient={{
-                    topLeftColor: "#2EA3A3",
-                    bottomRightColor: "#1D6262",
+                    topLeftColor: "#CBEFFF",
+                    bottomRightColor: "#BDD6F7",
                   }}
                   level={3.5}
                 />
@@ -286,8 +291,8 @@ export default function Album() {
                   title={"Google Cloud"}
                   picture={googleCloud}
                   gradient={{
-                    topLeftColor: "#2EA3A3",
-                    bottomRightColor: "#1D6262",
+                    topLeftColor: "#E1F9FF",
+                    bottomRightColor: "#FFFFFF",
                   }}
                   level={3.5}
                 />
@@ -296,8 +301,8 @@ export default function Album() {
                   title={"AWS"}
                   picture={aws}
                   gradient={{
-                    topLeftColor: "#2EA3A3",
-                    bottomRightColor: "#1D6262",
+                    topLeftColor: "#FFEDD5",
+                    bottomRightColor: "#F6D9B2",
                   }}
                   level={3.5}
                 />
@@ -306,8 +311,8 @@ export default function Album() {
                   title={"Serverless"}
                   picture={serverless}
                   gradient={{
-                    topLeftColor: "#2EA3A3",
-                    bottomRightColor: "#1D6262",
+                    topLeftColor: "#FFC9C9",
+                    bottomRightColor: "#F4B6B6",
                   }}
                   level={3.5}
                 />
@@ -316,8 +321,8 @@ export default function Album() {
                   title={"Auto-scaling"}
                   picture={elasticBeanstalk}
                   gradient={{
-                    topLeftColor: "#2EA3A3",
-                    bottomRightColor: "#1D6262",
+                    topLeftColor: "#FFEDD5",
+                    bottomRightColor: "#F6D9B2",
                   }}
                   level={3.5}
                 />
@@ -326,8 +331,8 @@ export default function Album() {
                   title={"Stockage cloud"}
                   picture={gcs}
                   gradient={{
-                    topLeftColor: "#2EA3A3",
-                    bottomRightColor: "#1D6262",
+                    topLeftColor: "#CBEFFF",
+                    bottomRightColor: "#BDD6F7",
                   }}
                   level={3.5}
                 />
@@ -336,8 +341,8 @@ export default function Album() {
                   title={"CDNs"}
                   picture={cloudflare}
                   gradient={{
-                    topLeftColor: "#2EA3A3",
-                    bottomRightColor: "#1D6262",
+                    topLeftColor: "#FFEDD5",
+                    bottomRightColor: "#F6D9B2",
                   }}
                   level={3.5}
                 />
@@ -346,28 +351,379 @@ export default function Album() {
                   title={"Rate-limiting"}
                   picture={speedLimit}
                   gradient={{
-                    topLeftColor: "#2EA3A3",
-                    bottomRightColor: "#1D6262",
+                    topLeftColor: "#FFC9C9",
+                    bottomRightColor: "#F4B6B6",
                   }}
-                  level={3.5}
+                  level={4}
                 />
                 <SkillCard
                   key={10}
                   title={"Kubernetes"}
                   picture={kubernetes}
                   gradient={{
-                    topLeftColor: "#2EA3A3",
-                    bottomRightColor: "#1D6262",
+                    topLeftColor: "#CBEFFF",
+                    bottomRightColor: "#BDD6F7",
+                  }}
+                  level={2}
+                />
+                <SkillCard
+                  key={10}
+                  title={"Sécurité (DDOS / XSS)"}
+                  picture={DDOS}
+                  gradient={{
+                    topLeftColor: "#EFFFF9",
+                    bottomRightColor: "#C1F7E7",
                   }}
                   level={3.5}
                 />
                 <SkillCard
                   key={10}
-                  title={"Sécurité"}
-                  picture={DDOS}
+                  title={"Visual Studio Code"}
+                  picture={vscode}
                   gradient={{
-                    topLeftColor: "#2EA3A3",
-                    bottomRightColor: "#1D6262",
+                    topLeftColor: "#CBEFFF",
+                    bottomRightColor: "#BDD6F7",
+                  }}
+                  level={4}
+                />
+              </Grid>
+            </Container>
+            <Container
+              maxWidth={window.innerWidth < 600 ? "xs" : null}
+              sx={{
+                mt: 6,
+                display: "flex",
+                justifyContent: "space-between",
+              }}
+            >
+              <Typography variant="h6" fontWeight={700} sx={{}}>
+                Gestion
+              </Typography>
+            </Container>
+            <Container
+              sx={{ mt: 4 }}
+              maxWidth={window.innerWidth < 600 ? "xs" : null}
+            >
+              {/* End hero unit */}
+              <Grid container spacing={{ xs: 2 }}>
+                <SkillCard
+                  key={1}
+                  title={"Méthodologie Agile"}
+                  picture={agileMethod}
+                  gradient={{
+                    topLeftColor: "#FDFFB3",
+                    bottomRightColor: "#F7F9CB",
+                  }}
+                  level={3.5}
+                />
+                <SkillCard
+                  key={1}
+                  title={"Lean startup"}
+                  picture={buildMeasureLearn}
+                  gradient={{
+                    topLeftColor: "#FDFFB3",
+                    bottomRightColor: "#F7F9CB",
+                  }}
+                  level={3.5}
+                />
+                <SkillCard
+                  key={1}
+                  title={"Gantt"}
+                  picture={gantt}
+                  gradient={{
+                    topLeftColor: "#FDFFB3",
+                    bottomRightColor: "#F7F9CB",
+                  }}
+                  level={3.5}
+                />
+                <SkillCard
+                  key={1}
+                  title={"Kanban"}
+                  picture={kanban}
+                  gradient={{
+                    topLeftColor: "#FDFFB3",
+                    bottomRightColor: "#F7F9CB",
+                  }}
+                  level={3.5}
+                />
+                <SkillCard
+                  key={1}
+                  title={"ClickUp / Asana"}
+                  picture={javascript}
+                  gradient={{
+                    topLeftColor: "#FDFFB3",
+                    bottomRightColor: "#F7F9CB",
+                  }}
+                  level={3.5}
+                />
+                <SkillCard
+                  key={1}
+                  title={"Comptabilité"}
+                  picture={javascript}
+                  gradient={{
+                    topLeftColor: "#FDFFB3",
+                    bottomRightColor: "#F7F9CB",
+                  }}
+                  level={3.5}
+                />
+                <SkillCard
+                  key={1}
+                  title={"Innovation accounting"}
+                  picture={javascript}
+                  gradient={{
+                    topLeftColor: "#FDFFB3",
+                    bottomRightColor: "#F7F9CB",
+                  }}
+                  level={3.5}
+                />
+                <SkillCard
+                  key={1}
+                  title={"Excel"}
+                  picture={javascript}
+                  gradient={{
+                    topLeftColor: "#FDFFB3",
+                    bottomRightColor: "#F7F9CB",
+                  }}
+                  level={3.5}
+                />
+                <SkillCard
+                  key={1}
+                  title={"Google Analytics"}
+                  picture={javascript}
+                  gradient={{
+                    topLeftColor: "#FDFFB3",
+                    bottomRightColor: "#F7F9CB",
+                  }}
+                  level={3.5}
+                />
+              </Grid>
+            </Container>
+            <Container
+              maxWidth={window.innerWidth < 600 ? "xs" : null}
+              sx={{
+                mt: 6,
+                display: "flex",
+                justifyContent: "space-between",
+              }}
+            >
+              <Typography variant="h6" fontWeight={700} sx={{}}>
+                Communication
+              </Typography>
+            </Container>
+            <Container
+              sx={{ mt: 4 }}
+              maxWidth={window.innerWidth < 600 ? "xs" : null}
+            >
+              {/* End hero unit */}
+              <Grid container spacing={{ xs: 2 }}>
+                <SkillCard
+                  key={1}
+                  title={"Anglais"}
+                  picture={javascript}
+                  gradient={{
+                    topLeftColor: "#FDFFB3",
+                    bottomRightColor: "#F7F9CB",
+                  }}
+                  level={5}
+                />
+                <SkillCard
+                  key={1}
+                  title={"Français"}
+                  picture={javascript}
+                  gradient={{
+                    topLeftColor: "#FDFFB3",
+                    bottomRightColor: "#F7F9CB",
+                  }}
+                  level={5}
+                />
+                <SkillCard
+                  key={1}
+                  title={"Chinois"}
+                  picture={javascript}
+                  gradient={{
+                    topLeftColor: "#FDFFB3",
+                    bottomRightColor: "#F7F9CB",
+                  }}
+                  level={5}
+                />
+                <SkillCard
+                  key={1}
+                  title={"Allemand"}
+                  picture={javascript}
+                  gradient={{
+                    topLeftColor: "#FDFFB3",
+                    bottomRightColor: "#F7F9CB",
+                  }}
+                  level={2.5}
+                />
+                <SkillCard
+                  key={1}
+                  title={"Esperanto"}
+                  picture={javascript}
+                  gradient={{
+                    topLeftColor: "#FDFFB3",
+                    bottomRightColor: "#F7F9CB",
+                  }}
+                  level={2}
+                />
+                <SkillCard
+                  key={1}
+                  title={"Espagnol"}
+                  picture={javascript}
+                  gradient={{
+                    topLeftColor: "#FDFFB3",
+                    bottomRightColor: "#F7F9CB",
+                  }}
+                  level={1.5}
+                />
+                <SkillCard
+                  key={1}
+                  title={"Google ads"}
+                  picture={javascript}
+                  gradient={{
+                    topLeftColor: "#FDFFB3",
+                    bottomRightColor: "#F7F9CB",
+                  }}
+                  level={3.5}
+                />
+                <SkillCard
+                  key={1}
+                  title={"Facebook ads"}
+                  picture={javascript}
+                  gradient={{
+                    topLeftColor: "#FDFFB3",
+                    bottomRightColor: "#F7F9CB",
+                  }}
+                  level={3.5}
+                />
+                <SkillCard
+                  key={1}
+                  title={"Réseaux Sociaux"}
+                  picture={javascript}
+                  gradient={{
+                    topLeftColor: "#FDFFB3",
+                    bottomRightColor: "#F7F9CB",
+                  }}
+                  level={3.5}
+                />
+                <SkillCard
+                  key={1}
+                  title={"Tests A/B"}
+                  picture={javascript}
+                  gradient={{
+                    topLeftColor: "#FDFFB3",
+                    bottomRightColor: "#F7F9CB",
+                  }}
+                  level={3.5}
+                />
+
+                <SkillCard
+                  key={1}
+                  title={"Proposition de valeur"}
+                  picture={javascript}
+                  gradient={{
+                    topLeftColor: "#FDFFB3",
+                    bottomRightColor: "#F7F9CB",
+                  }}
+                  level={3.5}
+                />
+                <SkillCard
+                  key={1}
+                  title={"Négociation"}
+                  picture={javascript}
+                  gradient={{
+                    topLeftColor: "#FDFFB3",
+                    bottomRightColor: "#F7F9CB",
+                  }}
+                  level={4}
+                />
+                <SkillCard
+                  key={1}
+                  title={"Pédagogie"}
+                  picture={javascript}
+                  gradient={{
+                    topLeftColor: "#FDFFB3",
+                    bottomRightColor: "#F7F9CB",
+                  }}
+                  level={5}
+                />
+                <SkillCard
+                  key={1}
+                  title={"PPT"}
+                  picture={javascript}
+                  gradient={{
+                    topLeftColor: "#FDFFB3",
+                    bottomRightColor: "#F7F9CB",
+                  }}
+                  level={3.5}
+                />
+                <SkillCard
+                  key={1}
+                  title={"Figma"}
+                  picture={javascript}
+                  gradient={{
+                    topLeftColor: "#FDFFB3",
+                    bottomRightColor: "#F7F9CB",
+                  }}
+                  level={3.5}
+                />
+              </Grid>
+            </Container>
+            <Container
+              maxWidth={window.innerWidth < 600 ? "xs" : null}
+              sx={{
+                mt: 6,
+                display: "flex",
+                justifyContent: "space-between",
+              }}
+            >
+              <Typography variant="h6" fontWeight={700} sx={{}}>
+                Légal
+              </Typography>
+            </Container>
+            <Container
+              sx={{ mt: 4 }}
+              maxWidth={window.innerWidth < 600 ? "xs" : null}
+            >
+              {/* End hero unit */}
+              <Grid container spacing={{ xs: 2 }}>
+                <SkillCard
+                  key={1}
+                  title={"Droit des marques"}
+                  picture={javascript}
+                  gradient={{
+                    topLeftColor: "#FDFFB3",
+                    bottomRightColor: "#F7F9CB",
+                  }}
+                  level={3.5}
+                />
+                <SkillCard
+                  key={1}
+                  title={"Création d'entreprise"}
+                  picture={javascript}
+                  gradient={{
+                    topLeftColor: "#FDFFB3",
+                    bottomRightColor: "#F7F9CB",
+                  }}
+                  level={3.5}
+                />
+                <SkillCard
+                  key={1}
+                  title={"Droit du travail"}
+                  picture={javascript}
+                  gradient={{
+                    topLeftColor: "#FDFFB3",
+                    bottomRightColor: "#F7F9CB",
+                  }}
+                  level={3.5}
+                />
+                <SkillCard
+                  key={1}
+                  title={"Droit des contrats"}
+                  picture={javascript}
+                  gradient={{
+                    topLeftColor: "#FDFFB3",
+                    bottomRightColor: "#F7F9CB",
                   }}
                   level={3.5}
                 />
