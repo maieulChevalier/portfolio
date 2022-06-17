@@ -44,14 +44,6 @@ export default function SkillCard(props) {
             height: 40,
             borderRadius: 1,
             mr: 2,
-            // backgroundColor: theme.palette.primary.light,
-            // background:
-            //   theme.palette.mode === "light"
-            //     ? `linear-gradient(to right bottom, ${gradient.topLeftColor}, ${gradient.bottomRightColor})`
-            //     : `linear-gradient(to right bottom, ${gradient.topLeftColor.concat(
-            //         "80"
-            //       )},
-            //      ${gradient.bottomRightColor.concat("80")})`,
           }}
         />
         <Box sx={{ flexGrow: 1 }}>
