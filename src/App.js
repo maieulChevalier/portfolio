@@ -1,17 +1,10 @@
 import { useState, useMemo, createContext } from "react";
-import Home from "./components/Home";
-import Skills from "./components/Skills";
-import Portfolio from "./components/Portfolio";
+import { Home, Skills, Portfolio, About } from "./Pages";
 
 import { BrowserRouter } from "react-router-dom";
 import { Routes, Route, Link } from "react-router-dom";
-import ResponsiveAppBar from "./components/ResponsiveAppBar";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 import CssBaseline from "@mui/material/CssBaseline";
-
-import { isDarkModeVar } from "./cache";
-import { useReactiveVar } from "@apollo/client";
-import About from "./components/About";
 
 export const ColorModeContext = createContext({ toggleColorMode: () => {} });
 
@@ -52,7 +45,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/skills" element={<Skills />} />
-            <Route path="/skills" element={<About />} />
+            <Route path="/about" element={<About />} />
             {/* an about section to talk about my interests, hobbies, daily routine, etc. */}
           </Routes>
         </ThemeProvider>

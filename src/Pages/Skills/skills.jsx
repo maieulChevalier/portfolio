@@ -7,38 +7,29 @@ import Container from "@mui/material/Container";
 import { useTheme, Zoom, Tabs, Tab, Button } from "@mui/material";
 import FilterListIcon from "@mui/icons-material/FilterList";
 
-import ResponsiveAppBar from "./ResponsiveAppBar";
+import ResponsiveAppBar from "../../components/ResponsiveAppBar";
 import SkillCard from "./SkillCard";
 import WebDevelopmentSkills from "./WebDevelopmentSkills";
-
-import agileMethod from "../images/agileMethod.png";
-import startup from "../images/startup.png";
-import gantt from "../images/gantt.png";
-import kanban from "../images/kanban.png";
-import clickup from "../images/clickup.png";
-import accounting from "../images/accounting.png";
-import chart from "../images/chart.png";
-import excel from "../images/excel.png";
-import googleAnalytics from "../images/googleAnalytics.png";
-import englishFlag from "../images/englishFlag.png";
-import frenchFlag from "../images/frenchFlag.png";
-import chineseFlag from "../images/chineseFlag.png";
-import germanFlag from "../images/germanFlag.png";
-import esperantoFlag from "../images/esperantoFlag.png";
-import spanishFlag from "../images/spanishFlag.png";
-import googleAds from "../images/googleAds.png";
-import megaphone from "../images/megaphone.png";
-import facebook from "../images/facebook.png";
-import valueProposition from "../images/valueProposition.png";
-import shakeHands from "../images/shakeHands.png";
-import teacher from "../images/teacher.png";
-import PPT from "../images/PPT.png";
-import figma from "../images/figma.png";
-import registered from "../images/registered.png";
-import signPaper from "../images/signPaper.png";
-import labourLaw from "../images/labourLaw.png";
-import contractsLaw from "../images/contractsLaw.webp";
 import ManagementSkills from "./ManagementSkills";
+
+import englishFlag from "../../images/englishFlag.png";
+import frenchFlag from "../../images/frenchFlag.png";
+import chineseFlag from "../../images/chineseFlag.png";
+import germanFlag from "../../images/germanFlag.png";
+import esperantoFlag from "../../images/esperantoFlag.png";
+import spanishFlag from "../../images/spanishFlag.png";
+import googleAds from "../../images/googleAds.png";
+import megaphone from "../../images/megaphone.png";
+import facebook from "../../images/facebook.png";
+import valueProposition from "../../images/valueProposition.png";
+import shakeHands from "../../images/shakeHands.png";
+import teacher from "../../images/teacher.png";
+import PPT from "../../images/PPT.png";
+import figma from "../../images/figma.png";
+import registered from "../../images/registered.png";
+import signPaper from "../../images/signPaper.png";
+import labourLaw from "../../images/labourLaw.png";
+import contractsLaw from "../../images/contractsLaw.webp";
 
 function Copyright() {
   return (
@@ -50,7 +41,7 @@ function Copyright() {
 
 const cards = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
-export default function Album() {
+export default function Skills() {
   const theme = useTheme();
 
   console.log(window.innerWidth < 600);

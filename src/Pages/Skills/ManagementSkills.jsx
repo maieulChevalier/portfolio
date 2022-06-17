@@ -7,15 +7,15 @@ import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
 
-import agileMethod from "../images/agileMethod.png";
-import startup from "../images/startup.png";
-import gantt from "../images/gantt.png";
-import kanban from "../images/kanban.png";
-import clickup from "../images/clickup.png";
-import accounting from "../images/accounting.png";
-import chart from "../images/chart.png";
-import excel from "../images/excel.png";
-import googleAnalytics from "../images/googleAnalytics.png";
+import agileMethod from "../../images/agileMethod.png";
+import startup from "../../images/startup.png";
+import gantt from "../../images/gantt.png";
+import kanban from "../../images/kanban.png";
+import clickup from "../../images/clickup.png";
+import accounting from "../../images/accounting.png";
+import chart from "../../images/chart.png";
+import excel from "../../images/excel.png";
+import googleAnalytics from "../../images/googleAnalytics.png";
 
 function ManagementSkills() {
   return (

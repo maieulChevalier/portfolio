@@ -1,12 +1,11 @@
 import { useEffect, useRef } from "react";
-import Header from "./Header";
-import BackgroundParticles from "./BackgroundParticles";
+import BackgroundParticles from "../../components/BackgroundParticles";
 
 import Typed from "typed.js";
 import { Typography, Avatar, Grid, Box } from "@mui/material";
-import ProfilePictureCartoon from "../images/ProfilePictureCartoon.png";
+import ProfilePictureCartoon from "../../images/ProfilePictureCartoon.png";
 
-const Home = () => {
+const Portfolio = () => {
   // Create reference to store the DOM element containing the animation
   const el = useRef(null);
   // Create reference to store the Typed instance itself
@@ -100,4 +99,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Portfolio;
