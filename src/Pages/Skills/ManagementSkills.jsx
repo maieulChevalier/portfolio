@@ -3,8 +3,6 @@ import React from "react";
 import SkillCard from "./SkillCard";
 
 import Grid from "@mui/material/Grid";
-import Box from "@mui/material/Box";
-import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
 
 import agileMethod from "../../images/agileMethod.png";
@@ -23,43 +21,44 @@ function ManagementSkills() {
       {/* End hero unit */}
       <Grid container spacing={{ xs: 2 }}>
         <SkillCard
-          key={1}
+          key={"agile methodology"}
           title={"Méthodologie Agile"}
           picture={agileMethod}
           level={4}
         />
         <SkillCard
-          key={1}
+          key={"lean methodology"}
           title={"Méthodologie Lean"}
           picture={startup}
           level={4}
         />
-        <SkillCard key={1} title={"Gantt"} picture={gantt} level={4} />
-        <SkillCard key={5} title={"Kanban"} picture={kanban} level={5} />
+        <SkillCard key={"gantt"} title={"Gantt"} picture={gantt} level={4} />
+        <SkillCard key={"kanban"} title={"Kanban"} picture={kanban} level={5} />
         <SkillCard
-          key={1}
-          title={"ClickUp / Asana"}
+          key={"clickup"}
+          title={"ClickUp"}
           picture={clickup}
           level={4}
         />
+        <SkillCard key={"asana"} title={"Asana"} picture={clickup} level={4} />
         <SkillCard
-          key={1}
+          key={"accounting"}
           title={"Comptabilité"}
           picture={accounting}
           level={3.5}
         />
         <SkillCard
-          key={1}
+          key={"innovation accounting"}
           title={"Innovation accounting"}
           picture={chart}
           level={4.5}
         />
         <SkillCard key={1} title={"Excel"} picture={excel} level={3.5} />
         <SkillCard
-          key={1}
+          key={"google analytics"}
           title={"Google Analytics"}
           picture={googleAnalytics}
-          level={4}
+          level={3.5}
         />
       </Grid>
     </Container>

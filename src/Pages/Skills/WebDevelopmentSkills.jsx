@@ -35,8 +35,10 @@ import elasticBeanstalk from "../../images/elasticBeanstalk.png";
 import gcs from "../../images/gcs.png";
 import cloudflare from "../../images/cloudflare.png";
 import speedLimit from "../../images/speedLimit.png";
+import docker from "../../images/docker.svg";
 import kubernetes from "../../images/kubernetes.png";
 import DDOS from "../../images/DDOS.png";
+import XSS from "../../images/XSS.png";
 import vscode from "../../images/vscode.png";
 
 function WebDevelopmentSkills() {
@@ -49,84 +51,125 @@ function WebDevelopmentSkills() {
         {/* End hero unit */}
         <Grid container spacing={{ xs: 2 }}>
           <SkillCard
-            key={1}
+            key={"javascript"}
             title={"Javascript"}
             picture={javascript}
             level={3.5}
           />
-          <SkillCard key={1} title={"Python"} picture={python} level={2.5} />
-          <SkillCard key={1} title={"PHP"} picture={php} level={2.5} />
-          <SkillCard key={2} title={"Html5"} picture={HTML5} level={4} />
-          <SkillCard key={3} title={"CSS3"} picture={CSS3} level={3.5} />
-          <SkillCard key={4} title={"React"} picture={react} level={4.5} />
-          <SkillCard key={5} title={"Vue.js"} picture={vue} level={3} />
           <SkillCard
-            key={6}
+            key={"python"}
+            title={"Python"}
+            picture={python}
+            level={2.5}
+          />
+          <SkillCard key={"php"} title={"PHP"} picture={php} level={2.5} />
+          <SkillCard key={"html5"} title={"Html5"} picture={HTML5} level={4} />
+          <SkillCard key={"css3"} title={"CSS3"} picture={CSS3} level={3.5} />
+          <SkillCard
+            key={"react"}
+            title={"React"}
+            picture={react}
+            level={4.5}
+          />
+          <SkillCard key={"vue"} title={"Vue.js"} picture={vue} level={3} />
+          <SkillCard
+            key={"mui"}
             title={"Material design"}
             picture={UIUX}
             level={4}
           />
-          <SkillCard key={7} title={"Git"} picture={git} level={4} />
-          <SkillCard key={8} title={"GraphQL"} picture={graphql} level={4.5} />
-          <SkillCard key={9} title={"nodeJS"} picture={nodejs} level={4} />
-          <SkillCard key={10} title={"REST"} picture={rest} level={3} />
-          <SkillCard key={10} title={"neo4j"} picture={neo4j} level={4.5} />
-          <SkillCard key={10} title={"mongoDB"} picture={mongoDB} level={3} />
-          <SkillCard key={10} title={"redis"} picture={redis} level={4} />
+          <SkillCard key={"git"} title={"Git"} picture={git} level={4} />
           <SkillCard
-            key={10}
+            key={"graphql"}
+            title={"GraphQL"}
+            picture={graphql}
+            level={4.5}
+          />
+          <SkillCard
+            key={"nodejs"}
+            title={"nodeJS"}
+            picture={nodejs}
+            level={4}
+          />
+          <SkillCard key={"rest"} title={"REST"} picture={rest} level={3} />
+          <SkillCard
+            key={"neo4j"}
+            title={"neo4j"}
+            picture={neo4j}
+            level={4.5}
+          />
+          <SkillCard
+            key={"mongodb"}
+            title={"mongoDB"}
+            picture={mongoDB}
+            level={3}
+          />
+          <SkillCard key={"redis"} title={"redis"} picture={redis} level={4} />
+          <SkillCard
+            key={"postgresql"}
             title={"postgreSQL"}
             picture={postgresql}
             level={3}
           />
-          <SkillCard key={10} title={"Firebase"} picture={firebase} level={4} />
-          <SkillCard key={10} title={"CI/CD"} picture={CICD} level={3.5} />
           <SkillCard
-            key={10}
+            key={"firebase"}
+            title={"Firebase"}
+            picture={firebase}
+            level={4}
+          />
+          <SkillCard key={"ci/cd"} title={"CI/CD"} picture={CICD} level={3.5} />
+          <SkillCard
+            key={"google cloud"}
             title={"Google Cloud"}
             picture={googleCloud}
             level={3.5}
           />
           <SkillCard key={10} title={"AWS"} picture={aws} level={3.5} />
           <SkillCard
-            key={10}
+            key={"serverless"}
             title={"Serverless"}
             picture={serverless}
             level={3.5}
           />
           <SkillCard
-            key={10}
+            key={"auto-scaling"}
             title={"Auto-scaling"}
             picture={elasticBeanstalk}
             level={3.5}
           />
           <SkillCard
-            key={10}
+            key={"cloud storage"}
             title={"Stockage cloud"}
             picture={gcs}
             level={3.5}
           />
           <SkillCard key={10} title={"CDNs"} picture={cloudflare} level={3.5} />
           <SkillCard
-            key={10}
-            title={"Rate-limiting"}
-            picture={speedLimit}
-            level={4}
+            key={"docker"}
+            title={"Docker"}
+            picture={docker}
+            level={2}
           />
           <SkillCard
-            key={10}
+            key={"kubernetes"}
             title={"Kubernetes"}
             picture={kubernetes}
             level={2}
           />
           <SkillCard
-            key={10}
-            title={"Sécurité (DDOS / XSS)"}
+            key={"DDOS prevetion"}
+            title={"Prévention DDOS"}
             picture={DDOS}
             level={3.5}
           />
           <SkillCard
-            key={10}
+            key={"XSS prevention"}
+            title={"Prévention XSS"}
+            picture={XSS}
+            level={3.5}
+          />
+          <SkillCard
+            key={"visual studio code"}
             title={"Visual Studio Code"}
             picture={vscode}
             level={4}
