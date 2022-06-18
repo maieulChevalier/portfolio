@@ -21,8 +21,6 @@ function Copyright() {
   );
 }
 
-const cards = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-
 export default function Skills() {
   const theme = useTheme();
 
@@ -117,10 +115,26 @@ export default function Skills() {
         component="footer"
       >
         <Box sx={{ display: "flex", justifyContent: "center" }}>
-          <IconButton>
+          <IconButton
+            onClick={() =>
+              window.open(
+                "https://github.com/maieulChevalier",
+                "_blank",
+                "noopener,noreferrer"
+              )
+            }
+          >
             <GitHubIcon style={{ color: theme.palette.text.primary }} />
           </IconButton>
-          <IconButton>
+          <IconButton
+            onClick={() =>
+              window.open(
+                "https://www.linkedin.com/in/maieul-c-087655138/",
+                "_blank",
+                "noopener,noreferrer"
+              )
+            }
+          >
             <LinkedInIcon color="primary" />
           </IconButton>
         </Box>
