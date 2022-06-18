@@ -44,29 +44,24 @@ const ResponsiveAppBar = (props) => {
       onKeyDown={() => toggleDrawer(false)}
     >
       <List>
-        {["Inbox", "Starred", "Send email", "Drafts"].map((text, index) => (
-          <ListItem key={text} disablePadding>
-            <ListItemButton>
-              <ListItemIcon>
-                {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
-              </ListItemIcon>
-              <ListItemText primary={text} />
-            </ListItemButton>
-          </ListItem>
-        ))}
-      </List>
-      <Divider />
-      <List>
-        {["All mail", "Trash", "Spam"].map((text, index) => (
-          <ListItem key={text} disablePadding>
-            <ListItemButton>
-              <ListItemIcon>
-                {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
-              </ListItemIcon>
-              <ListItemText primary={text} />
-            </ListItemButton>
-          </ListItem>
-        ))}
+        <ListItem key="skills" disablePadding>
+          <ListItemButton
+            onClick={() => {
+              navigate(`/skills`);
+            }}
+          >
+            <ListItemText primary="Compétences" />
+          </ListItemButton>
+        </ListItem>
+        <ListItem key="portfolio" disablePadding>
+          <ListItemButton
+            onClick={() => {
+              navigate(`/portfolio`);
+            }}
+          >
+            <ListItemText primary="Portfolio" />
+          </ListItemButton>
+        </ListItem>
       </List>
     </Box>
   );
