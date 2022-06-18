@@ -25,23 +25,38 @@ function CommunicationSkills() {
     <Container sx={{ mt: 4 }} maxWidth={window.innerWidth < 600 ? "xs" : null}>
       {/* End hero unit */}
       <Grid container spacing={{ xs: 2 }}>
-        <SkillCard key={1} title={"Anglais"} picture={englishFlag} level={5} />
-        <SkillCard key={1} title={"Français"} picture={frenchFlag} level={5} />
-        <SkillCard key={1} title={"Chinois"} picture={chineseFlag} level={5} />
         <SkillCard
-          key={1}
+          key={"english"}
+          title={"Anglais"}
+          picture={englishFlag}
+          level={5}
+        />
+        <SkillCard
+          key={"french"}
+          title={"Français"}
+          picture={frenchFlag}
+          level={5}
+        />
+        <SkillCard
+          key={"chinese"}
+          title={"Chinois"}
+          picture={chineseFlag}
+          level={5}
+        />
+        <SkillCard
+          key={"german"}
           title={"Allemand"}
           picture={germanFlag}
           level={2.5}
         />
         <SkillCard
-          key={1}
+          key={"esperanto"}
           title={"Esperanto"}
           picture={esperantoFlag}
           level={2}
         />
         <SkillCard
-          key={1}
+          key={"spanish"}
           title={"Espagnol"}
           picture={spanishFlag}
           level={1.5}
@@ -53,32 +68,37 @@ function CommunicationSkills() {
           level={3.5}
         />
         <SkillCard
-          key={1}
+          key={"facebook ads"}
           title={"Facebook ads"}
           picture={megaphone}
           level={3.5}
         />
         <SkillCard
-          key={1}
+          key={"social networks"}
           title={"Réseaux Sociaux"}
           picture={facebook}
           level={4.5}
         />
         <SkillCard
-          key={1}
+          key={"value proposition"}
           title={"Proposition de valeur"}
           picture={valueProposition}
           level={4.5}
         />
         <SkillCard
-          key={4.5}
+          key={"negociations"}
           title={"Négociation"}
           picture={shakeHands}
           level={4}
         />
-        <SkillCard key={5} title={"Pédagogie"} picture={teacher} level={5} />
-        <SkillCard key={5} title={"PPT"} picture={PPT} level={5} />
-        <SkillCard key={1} title={"Figma"} picture={figma} level={3} />
+        <SkillCard
+          key={"pedagogy"}
+          title={"Pédagogie"}
+          picture={teacher}
+          level={5}
+        />
+        <SkillCard key={"ppt"} title={"PPT"} picture={PPT} level={5} />
+        <SkillCard key={"figma"} title={"Figma"} picture={figma} level={3} />
       </Grid>
     </Container>
   );

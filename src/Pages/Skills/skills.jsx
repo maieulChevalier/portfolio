@@ -23,8 +23,6 @@ function Copyright() {
 
 export default function Skills() {
   const theme = useTheme();
-
-  console.log(window.innerWidth < 600);
   return (
     <>
       <ResponsiveAppBar position="absolute" />

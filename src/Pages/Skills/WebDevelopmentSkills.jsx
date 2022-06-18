@@ -124,7 +124,7 @@ function WebDevelopmentSkills() {
             picture={googleCloud}
             level={3.5}
           />
-          <SkillCard key={10} title={"AWS"} picture={aws} level={3.5} />
+          <SkillCard key={"aws"} title={"AWS"} picture={aws} level={3.5} />
           <SkillCard
             key={"serverless"}
             title={"Serverless"}
@@ -143,7 +143,12 @@ function WebDevelopmentSkills() {
             picture={gcs}
             level={3.5}
           />
-          <SkillCard key={10} title={"CDNs"} picture={cloudflare} level={3.5} />
+          <SkillCard
+            key={"cdns"}
+            title={"CDNs"}
+            picture={cloudflare}
+            level={3.5}
+          />
           <SkillCard
             key={"docker"}
             title={"Docker"}
