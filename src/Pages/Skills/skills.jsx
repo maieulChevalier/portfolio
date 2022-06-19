@@ -133,7 +133,7 @@ export default function Skills() {
               )
             }
           >
-            <GitHubIcon style={{ color: theme.palette.text.primary }} />
+            <GitHubIcon sx={{ p: "2px", color: theme.palette.text.primary }} />
           </IconButton>
           <IconButton
             onClick={() =>
@@ -153,7 +153,7 @@ export default function Skills() {
             }}
           >
             <MailOutlineIcon
-              style={{ color: theme.palette.text.primary }}
+              sx={{ color: theme.palette.text.primary }}
               fontSize="small"
             />
           </IconButton>
