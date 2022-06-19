@@ -23,11 +23,11 @@ function Copyright() {
 
 export default function Skills() {
   const theme = useTheme();
+
   return (
     <>
       <ResponsiveAppBar position="absolute" />
       <main>
-        {/* Hero unit */}
         <Box
           sx={{
             pt: 8,
@@ -38,16 +38,6 @@ export default function Skills() {
             alignItems: "center",
           }}
         >
-          {/* <Tabs
-            value={value}
-            onChange={handleChange}
-            aria-label="secondary tabs example"
-          >
-            <Tab value="one" label="Développement Web" />
-            <Tab value="two" label="Communication" />
-            <Tab value="three" label="Droit" />
-            <Tab value="four" label="Gestion" />
-          </Tabs> */}
           <Box>
             <Container
               sx={{
