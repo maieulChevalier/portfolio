@@ -50,7 +50,6 @@ export default function SkillCard(props) {
           <Typography variant="body1" sx={{ fontWeight: 900 }}>
             {title}
           </Typography>
-          {/* <Typography variant="body2" sx={{ fontWeight: 500 }}> */}
           <Rating
             size="small"
             name="read-only"
@@ -61,7 +60,6 @@ export default function SkillCard(props) {
               color: theme.palette.text.primary,
             }}
           />
-          {/* </Typography> */}
         </Box>
       </Card>
     </Grid>

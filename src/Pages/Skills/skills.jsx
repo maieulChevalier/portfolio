@@ -50,7 +50,6 @@ export default function Skills() {
           </Tabs> */}
           <Box>
             <Container
-              maxWidth={window.innerWidth < 600 ? "xs" : null}
               sx={{
                 mt: 6,
                 display: "flex",
@@ -65,41 +64,20 @@ export default function Skills() {
               </Button>
             </Container>
             <WebDevelopmentSkills />
-            <Container
-              maxWidth={window.innerWidth < 600 ? "xs" : null}
-              sx={{
-                mt: 6,
-                display: "flex",
-                justifyContent: "space-between",
-              }}
-            >
-              <Typography variant="h6" fontWeight={700} sx={{}}>
+            <Container sx={{ mt: 6 }}>
+              <Typography variant="h6" fontWeight={700}>
                 Gestion
               </Typography>
             </Container>
             <ManagementSkills />
-            <Container
-              maxWidth={window.innerWidth < 600 ? "xs" : null}
-              sx={{
-                mt: 6,
-                display: "flex",
-                justifyContent: "space-between",
-              }}
-            >
-              <Typography variant="h6" fontWeight={700} sx={{}}>
+            <Container sx={{ mt: 6 }}>
+              <Typography variant="h6" fontWeight={700}>
                 Communication
               </Typography>
             </Container>
             <CommunicationSkills />
-            <Container
-              maxWidth={window.innerWidth < 600 ? "xs" : null}
-              sx={{
-                mt: 6,
-                display: "flex",
-                justifyContent: "space-between",
-              }}
-            >
-              <Typography variant="h6" fontWeight={700} sx={{}}>
+            <Container sx={{ mt: 6 }}>
+              <Typography variant="h6" fontWeight={700}>
                 Légal
               </Typography>
             </Container>
