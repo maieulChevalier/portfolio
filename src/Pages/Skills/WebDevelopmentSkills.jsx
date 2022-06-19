@@ -40,6 +40,8 @@ import kubernetes from "../../images/kubernetes.png";
 import DDOS from "../../images/DDOS.png";
 import XSS from "../../images/XSS.png";
 import vscode from "../../images/vscode.png";
+import unitTest from "../../images/unitTest.svg";
+import integrationTest from "../../images/integrationTest.svg";
 
 function WebDevelopmentSkills() {
   return (
@@ -153,7 +155,7 @@ function WebDevelopmentSkills() {
             key={"docker"}
             title={"Docker"}
             picture={docker}
-            level={2}
+            level={3.5}
           />
           <SkillCard
             key={"kubernetes"}
@@ -172,6 +174,18 @@ function WebDevelopmentSkills() {
             title={"Prévention XSS"}
             picture={XSS}
             level={3.5}
+          />
+          <SkillCard
+            key={"unit tests"}
+            title={"Unit tests"}
+            picture={unitTest}
+            level={3}
+          />
+          <SkillCard
+            key={"integration tests"}
+            title={"Integration tests"}
+            picture={integrationTest}
+            level={3}
           />
           <SkillCard
             key={"visual studio code"}
