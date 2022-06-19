@@ -13,6 +13,7 @@ import LegalSkills from "./LegalSkills";
 
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import MailOutlineIcon from "@mui/icons-material/MailOutline";
 
 function Copyright() {
   return (
@@ -110,6 +111,16 @@ export default function Skills() {
             }
           >
             <LinkedInIcon color="primary" />
+          </IconButton>
+          <IconButton
+            onClick={() => {
+              navigator.clipboard.writeText(`maieul.chevalier@gmail.com`);
+            }}
+          >
+            <MailOutlineIcon
+              style={{ color: theme.palette.text.primary }}
+              fontSize="small"
+            />
           </IconButton>
         </Box>
         <Typography variant="subtitle1" align="center" component="p">
