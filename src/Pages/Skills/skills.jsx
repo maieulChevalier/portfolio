@@ -3,7 +3,7 @@ import { useState } from "react";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
-import { useTheme, IconButton } from "@mui/material";
+import { useTheme, IconButton, Zoom } from "@mui/material";
 
 import ResponsiveAppBar from "../../components/ResponsiveAppBar";
 import WebDevelopmentSkills from "./WebDevelopmentSkills";
@@ -26,8 +26,42 @@ function Copyright() {
 export default function Skills() {
   const theme = useTheme();
 
+  const [linkCopiedMessage, setLinkCopiedMessage] = useState(false);
+  if (linkCopiedMessage) {
+    setTimeout(function () {
+      setLinkCopiedMessage(false);
+    }, 2000);
+  }
+
   return (
     <>
+      <Zoom
+        sx={{
+          position: "fixed",
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          height: "100%",
+          zIndex: 999,
+        }}
+        in={linkCopiedMessage}
+      >
+        <Container>
+          <Typography
+            variant="body1"
+            sx={{
+              p: 2,
+              backgroundColor:
+                theme.palette.mode === "dark" ? "#F8FAFB" : "#B9C0C2",
+              color: theme.palette.mode === "dark" ? "black" : "white",
+              borderRadius: 5,
+              fontWeight: 600,
+            }}
+          >
+            email copié sur le presse-papier
+          </Typography>
+        </Container>
+      </Zoom>
       <ResponsiveAppBar position="absolute" />
       <main>
         <Box
@@ -115,6 +149,7 @@ export default function Skills() {
           <IconButton
             onClick={() => {
               navigator.clipboard.writeText(`maieul.chevalier@gmail.com`);
+              setLinkCopiedMessage(true);
             }}
           >
             <MailOutlineIcon
