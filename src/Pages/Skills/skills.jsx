@@ -40,6 +40,7 @@ export default function Skills() {
         >
           <Box>
             <Container
+              maxWidth={window.innerWidth < 600 ? "xs" : null}
               sx={{
                 mt: 6,
                 display: "flex",
@@ -49,24 +50,37 @@ export default function Skills() {
               <Typography variant="h6" fontWeight={700} sx={{}}>
                 Développement web
               </Typography>
-              <Button variant="outlined" startIcon={<FilterListIcon />}>
+              <Button
+                sx={{ display: { xs: "none", md: "flex" } }}
+                variant="outlined"
+                startIcon={<FilterListIcon />}
+              >
                 Filtrer
               </Button>
             </Container>
             <WebDevelopmentSkills />
-            <Container sx={{ mt: 6 }}>
+            <Container
+              maxWidth={window.innerWidth < 600 ? "xs" : null}
+              sx={{ mt: 6 }}
+            >
               <Typography variant="h6" fontWeight={700}>
                 Gestion
               </Typography>
             </Container>
             <ManagementSkills />
-            <Container sx={{ mt: 6 }}>
+            <Container
+              maxWidth={window.innerWidth < 600 ? "xs" : null}
+              sx={{ mt: 6 }}
+            >
               <Typography variant="h6" fontWeight={700}>
                 Communication
               </Typography>
             </Container>
             <CommunicationSkills />
-            <Container sx={{ mt: 6 }}>
+            <Container
+              maxWidth={window.innerWidth < 600 ? "xs" : null}
+              sx={{ mt: 6 }}
+            >
               <Typography variant="h6" fontWeight={700}>
                 Légal
               </Typography>

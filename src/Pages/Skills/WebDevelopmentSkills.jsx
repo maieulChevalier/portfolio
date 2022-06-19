@@ -1,14 +1,9 @@
 import React from "react";
-import { useState } from "react";
 
 import SkillCard from "./SkillCard";
 
 import Grid from "@mui/material/Grid";
-import Box from "@mui/material/Box";
-import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
-import { useTheme, Zoom, Tabs, Tab, Button } from "@mui/material";
-import FilterListIcon from "@mui/icons-material/FilterList";
 
 import javascript from "../../images/javascript.png";
 import HTML5 from "../../images/HTML5.png";
@@ -34,7 +29,6 @@ import serverless from "../../images/serverless.png";
 import elasticBeanstalk from "../../images/elasticBeanstalk.png";
 import gcs from "../../images/gcs.png";
 import cloudflare from "../../images/cloudflare.png";
-import speedLimit from "../../images/speedLimit.png";
 import docker from "../../images/docker.svg";
 import kubernetes from "../../images/kubernetes.png";
 import DDOS from "../../images/DDOS.png";

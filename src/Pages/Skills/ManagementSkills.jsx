@@ -17,7 +17,7 @@ import googleAnalytics from "../../images/googleAnalytics.png";
 
 function ManagementSkills() {
   return (
-    <Container sx={{ mt: 4 }} maxWidth={window.innerWidth < 600 ? "xs" : null}>
+    <Container maxWidth={window.innerWidth < 600 ? "xs" : null} sx={{ mt: 4 }}>
       {/* End hero unit */}
       <Grid container spacing={{ xs: 2 }}>
         <SkillCard
