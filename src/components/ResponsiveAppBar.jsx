@@ -41,6 +41,15 @@ const ResponsiveAppBar = (props) => {
       onKeyDown={() => toggleDrawer(false)}
     >
       <List>
+        <ListItem key="portfolio" disablePadding>
+          <ListItemButton
+            onClick={() => {
+              navigate(`/portfolio`);
+            }}
+          >
+            <ListItemText primary="Portfolio" />
+          </ListItemButton>
+        </ListItem>
         <ListItem key="skills" disablePadding>
           <ListItemButton
             onClick={() => {
@@ -57,6 +66,15 @@ const ResponsiveAppBar = (props) => {
             }}
           >
             <ListItemText primary="Portfolio" />
+          </ListItemButton>
+        </ListItem>
+        <ListItem key="skills" disablePadding>
+          <ListItemButton
+            onClick={() => {
+              navigate(`/skills`);
+            }}
+          >
+            <ListItemText primary="Compétences" />
           </ListItemButton>
         </ListItem>
       </List>

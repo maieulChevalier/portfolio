@@ -145,8 +145,8 @@ function WebDevelopmentSkills() {
             level={3.5}
           />
           <SkillCard
-            key={"cloud storage"}
-            title={"Stockage cloud"}
+            key={"oject storage"}
+            title={"Stockage objet"}
             picture={gcs}
             level={3.5}
           />
