@@ -26,6 +26,7 @@ import Brightness7Icon from "@mui/icons-material/Brightness7";
 import { useNavigate } from "react-router-dom";
 import { useTheme } from "@emotion/react";
 import Brightness4Icon from "@mui/icons-material/Brightness4";
+import GitHubIcon from "@mui/icons-material/GitHub";
 
 const ResponsiveAppBar = (props) => {
   const { position = "fixed" } = props;
@@ -111,39 +112,6 @@ const ResponsiveAppBar = (props) => {
             >
               {list()}
             </Drawer>
-            {/* <Menu
-              id="menu-appbar"
-              anchorEl={anchorElNav}
-              anchorOrigin={{
-                vertical: "bottom",
-                horizontal: "left",
-              }}
-              keepMounted
-              transformOrigin={{
-                vertical: "top",
-                horizontal: "left",
-              }}
-              open={Boolean(anchorElNav)}
-              onClose={handleCloseNavMenu}
-              sx={{
-                display: { xs: "block", md: "none" },
-              }}
-            >
-              <MenuItem key="skills" onClick={handleCloseNavMenu}>
-                <Typography
-                  textAlign="center"
-                  variant="h6"
-                  sx={{ fontWeight: 700, mr: 1 }}
-                >
-                  Compétences
-                </Typography>
-              </MenuItem>
-              <MenuItem key="Portfolio" onClick={handleCloseNavMenu}>
-                <Typography textAlign="center" sx={{ fontWeight: 700, mr: 1 }}>
-                  Portfolio
-                </Typography>
-              </MenuItem>
-            </Menu> */}
           </Box>
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
             <Button
@@ -171,6 +139,22 @@ const ResponsiveAppBar = (props) => {
             >
               <Typography sx={{ fontWeight: 700, mr: 1 }}>Portfolio</Typography>
             </Button>
+          </Box>
+          <Box sx={{ flexGrow: 0 }}>
+            <IconButton
+              onClick={() =>
+                window.open(
+                  "https://github.com/maieulChevalier",
+                  "_blank",
+                  "noopener,noreferrer"
+                )
+              }
+            >
+              <GitHubIcon
+                sx={{ p: "2px" }}
+                style={{ color: theme.palette.text.primary }}
+              />
+            </IconButton>
           </Box>
 
           <Box sx={{ flexGrow: 0 }}>

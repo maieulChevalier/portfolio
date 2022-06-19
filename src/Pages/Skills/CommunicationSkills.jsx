@@ -62,16 +62,16 @@ function CommunicationSkills() {
           level={1.5}
         />
         <SkillCard
-          key={1}
-          title={"Google ads"}
-          picture={googleAds}
-          level={3.5}
+          key={"negociations"}
+          title={"Négociation"}
+          picture={shakeHands}
+          level={4}
         />
         <SkillCard
-          key={"facebook ads"}
-          title={"Facebook ads"}
-          picture={megaphone}
-          level={3.5}
+          key={"pedagogy"}
+          title={"Pédagogie"}
+          picture={teacher}
+          level={5}
         />
         <SkillCard
           key={"social networks"}
@@ -86,16 +86,16 @@ function CommunicationSkills() {
           level={4.5}
         />
         <SkillCard
-          key={"negociations"}
-          title={"Négociation"}
-          picture={shakeHands}
-          level={4}
+          key={1}
+          title={"Google ads"}
+          picture={googleAds}
+          level={3.5}
         />
         <SkillCard
-          key={"pedagogy"}
-          title={"Pédagogie"}
-          picture={teacher}
-          level={5}
+          key={"facebook ads"}
+          title={"Facebook ads"}
+          picture={megaphone}
+          level={3.5}
         />
         <SkillCard key={"ppt"} title={"PPT"} picture={PPT} level={5} />
         <SkillCard key={"figma"} title={"Figma"} picture={figma} level={3} />
