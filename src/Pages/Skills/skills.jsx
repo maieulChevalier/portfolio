@@ -52,7 +52,7 @@ export default function Skills() {
             sx={{
               p: 2,
               backgroundColor:
-                theme.palette.mode === "dark" ? "#F8FAFB" : "#B9C0C2",
+                theme.palette.mode === "dark" ? "#F8FAFB" : "#BABABA",
               color: theme.palette.mode === "dark" ? "black" : "white",
               borderRadius: 5,
               fontWeight: 600,

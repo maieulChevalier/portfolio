@@ -41,13 +41,13 @@ const ResponsiveAppBar = (props) => {
       onKeyDown={() => toggleDrawer(false)}
     >
       <List>
-        <ListItem key="portfolio" disablePadding>
+        <ListItem key="about" disablePadding>
           <ListItemButton
             onClick={() => {
-              navigate(`/portfolio`);
+              navigate(`/about`);
             }}
           >
-            <ListItemText primary="Portfolio" />
+            <ListItemText primary="À propos" />
           </ListItemButton>
         </ListItem>
         <ListItem key="skills" disablePadding>
@@ -68,7 +68,7 @@ const ResponsiveAppBar = (props) => {
             <ListItemText primary="Portfolio" />
           </ListItemButton>
         </ListItem>
-        <ListItem key="skills" disablePadding>
+        <ListItem key="Contact" disablePadding>
           <ListItemButton
             onClick={() => {
               navigate(`/skills`);
@@ -174,9 +174,13 @@ const ResponsiveAppBar = (props) => {
           <Box sx={{ flexGrow: 0 }}>
             <IconButton sx={{ ml: 1 }} onClick={colorMode.toggleColorMode}>
               {theme.palette.mode === "dark" ? (
-                <Brightness7Icon />
+                <Brightness7Icon
+                  sx={{ p: "1px", color: theme.palette.text.primary }}
+                />
               ) : (
-                <Brightness4Icon />
+                <Brightness4Icon
+                  sx={{ p: "1px", color: theme.palette.text.primary }}
+                />
               )}
             </IconButton>
           </Box>
