@@ -6,6 +6,7 @@ import Grid from "@mui/material/Grid";
 import Container from "@mui/material/Container";
 
 import javascript from "../../images/javascript.png";
+import typescript from "../../images/typescript.svg";
 import HTML5 from "../../images/HTML5.png";
 import CSS3 from "../../images/CSS3.png";
 import react from "../../images/react.png";
@@ -53,13 +54,17 @@ function WebDevelopmentSkills() {
             level={3.5}
           />
           <SkillCard
-            key={"python"}
-            title={"Python"}
-            picture={python}
-            level={2.5}
+            key={"typescript"}
+            title={"Typescript"}
+            picture={typescript}
+            level={3}
           />
-          <SkillCard key={"php"} title={"PHP"} picture={php} level={2.5} />
-          <SkillCard key={"html5"} title={"Html5"} picture={HTML5} level={4} />
+          <SkillCard
+            key={"html5"}
+            title={"Html5"}
+            picture={HTML5}
+            level={4.5}
+          />
           <SkillCard key={"css3"} title={"CSS3"} picture={CSS3} level={3.5} />
           <SkillCard
             key={"react"}
@@ -74,7 +79,6 @@ function WebDevelopmentSkills() {
             picture={UIUX}
             level={4}
           />
-          <SkillCard key={"git"} title={"Git"} picture={git} level={4} />
           <SkillCard
             key={"graphql"}
             title={"GraphQL"}
@@ -87,6 +91,13 @@ function WebDevelopmentSkills() {
             picture={nodejs}
             level={4}
           />
+          <SkillCard
+            key={"python"}
+            title={"Python"}
+            picture={python}
+            level={2.5}
+          />
+          <SkillCard key={"php"} title={"PHP"} picture={php} level={2.5} />
           <SkillCard key={"rest"} title={"REST"} picture={rest} level={3} />
           <SkillCard
             key={"neo4j"}
@@ -181,6 +192,7 @@ function WebDevelopmentSkills() {
             picture={integrationTest}
             level={3}
           />
+          <SkillCard key={"git"} title={"Git"} picture={git} level={4} />
           <SkillCard
             key={"visual studio code"}
             title={"Visual Studio Code"}

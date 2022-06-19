@@ -1,8 +1,9 @@
+import { useState } from "react";
+
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
-import { useTheme, Button, IconButton } from "@mui/material";
-import FilterListIcon from "@mui/icons-material/FilterList";
+import { useTheme, IconButton } from "@mui/material";
 
 import ResponsiveAppBar from "../../components/ResponsiveAppBar";
 import WebDevelopmentSkills from "./WebDevelopmentSkills";
@@ -50,13 +51,6 @@ export default function Skills() {
               <Typography variant="h6" fontWeight={700} sx={{}}>
                 Développement web
               </Typography>
-              <Button
-                sx={{ display: { xs: "none", md: "flex" } }}
-                variant="outlined"
-                startIcon={<FilterListIcon />}
-              >
-                Filtrer
-              </Button>
             </Container>
             <WebDevelopmentSkills />
             <Container
